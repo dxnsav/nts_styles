@@ -8,7 +8,7 @@
 	--text-color: #191919;
 }
 
-.gallery.full.screen .inner ul li span span img {
+[id^="gallery"].gallery.full.screen .inner ul li span span img {.gallery.full.screen .inner ul li span span img {
 	height: 100%;
 }
 
