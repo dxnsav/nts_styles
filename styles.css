@@ -54,6 +54,10 @@ header#header {
 	font-family: "Roboto Flex", sans-serif;
 }
 
+.nav-bar .logo span a img {
+	width: 100%;
+}
+
 .menu .logo-toggle {
 	display: none;
 }
@@ -70,7 +74,7 @@ header#header {
 
 .nav-links li a {
 	position: relative;
-	font-size: 17px;
+	font-size: 16px;
 	font-weight: 400;
 	color: var(--text-color);
 	text-decoration: none;
@@ -280,6 +284,14 @@ h1.contact-header {
 
 .phone {
 	margin-bottom: 18px;
+}
+
+#footerT {
+	width: 312px;
+	text-align: left;
+	font-size: 1em;
+	font-family: "Roboto Flex", sans-serif;
+	color: white;
 }
 
 @media (max-width: 736px) {
