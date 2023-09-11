@@ -1,11 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap");
 
 :root {
 	--body-color: #e4e9f7;
 	--nav-color: white;
 	--side-nav: #eeede2;
 	--text-color: #191919;
+}
+
+
+h1,
+h2,
+p,
+a {
+	padding: 0;
+	margin: 0;
 }
 
 section.active {
@@ -65,10 +73,10 @@ header#header {
 .nav-bar .nav-links {
 	display: flex;
 	align-items: center;
+	gap: 0.625rem;
 }
 
 .nav-bar .nav-links li {
-	margin: 0 5px;
 	list-style: none;
 }
 
@@ -107,15 +115,6 @@ header#header {
 	align-items: center;
 	justify-content: center;
 	margin: 0 5px;
-}
-
-
-h1,
-h2,
-p,
-a {
-	padding: 0;
-	margin: 0;
 }
 
 .section-container {
@@ -292,6 +291,25 @@ h1.contact-header {
 	font-size: 1em;
 	font-family: "Roboto Flex", sans-serif;
 	color: white;
+	line-height: 1.4;
+}
+
+#backtotop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: #3E592D;
+	cursor: pointer;
+	padding: 15px 15px;
+	border-radius: 50%;
+	font-size: 1rem;
+	scroll-behavior: smooth;
+	transition: all 1s;
+	opacity: 1;
+	right: 0;
 }
 
 @media (max-width: 736px) {
@@ -405,6 +423,10 @@ h1.contact-header {
 	}
 
 	div hr.style2 {
+		display: none;
+	}
+
+	img[alt="opt"] {
 		display: none;
 	}
 }
