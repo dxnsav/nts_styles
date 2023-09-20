@@ -1,5 +1,5 @@
 /* 
-	Version: 0.6.9
+	Version: 0.7.0
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap");
@@ -123,12 +123,12 @@ header#header {
 
 .nav-links li .btn-contact-me-nav a {
 	font-family: 'Poppins', sans-serif;
-	font-weight: 500;
 	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	padding: 8px 26px;
 	display: block;
+	text-wrap: nowrap;
 }
 
 .btn-contact-me-nav:hover {
