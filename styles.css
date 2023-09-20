@@ -1,5 +1,5 @@
 /* 
-	Version: 0.6.8
+	Version: 0.6.9
 */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap");
@@ -10,7 +10,6 @@
 	--side-nav: #eeede2;
 	--text-color: #191919;
 }
-
 
 h1,
 h2,
@@ -115,15 +114,17 @@ header#header {
 .btn-contact-me-nav {
 	background-color: #5d8446;
 	border-radius: 8px;
-	font-family: 'Poppins', sans-serif;
-	font-weight: 400;
-	font-size: 16px;
 	border: none;
 	padding: 0;
 	margin-left: 5%;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+	transition: all 0.2s ease-in-out;
 }
 
-.btn-contact-me-nav a {
+.nav-links li .btn-contact-me-nav a {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
 	padding: 8px 26px;
