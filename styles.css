@@ -275,7 +275,7 @@ h1.contact-header {
 .phone {
 	margin-bottom: 18px;
 }
-.container07 > .wrapper > .inner {
+#container07 > .wrapper > .inner {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
