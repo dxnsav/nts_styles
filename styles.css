@@ -1,28 +1,23 @@
-/* 
-	Version: 0.7.0
+ /* 
+	Version: 0.8.0
 */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap");
-
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Prompt:wght@600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&family=Unbounded:wght@600&display=swap);
 :root {
 	--body-color: #e4e9f7;
 	--nav-color: white;
 	--side-nav: #eeede2;
 	--text-color: #191919;
 }
-
+a,
 h1,
 h2,
-p,
-a {
+p {
 	padding: 0;
 	margin: 0;
 }
-
 section.active {
 	margin-top: 70px;
 }
-
 header#header {
 	position: fixed;
 	top: 0;
@@ -34,7 +29,6 @@ header#header {
 	box-sizing: border-box;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 }
-
 .nav-bar {
 	position: relative;
 	height: 100%;
@@ -47,7 +41,6 @@ header#header {
 	justify-content: space-between;
 	box-sizing: border-box;
 }
-
 .nav-bar .sidebarOpen {
 	color: var(--text-color);
 	width: 25px;
@@ -56,7 +49,6 @@ header#header {
 	cursor: pointer;
 	display: none;
 }
-
 .nav-bar .logo a {
 	font-size: 25px;
 	font-weight: 500;
@@ -64,25 +56,20 @@ header#header {
 	text-decoration: none;
 	font-family: "Roboto Flex", sans-serif;
 }
-
 .nav-bar .logo span a img {
 	width: 100%;
 }
-
 .menu .logo-toggle {
 	display: none;
 }
-
 .nav-bar .nav-links {
 	display: flex;
 	align-items: center;
 	gap: 0.625rem;
 }
-
 .nav-bar .nav-links li {
 	list-style: none;
 }
-
 .nav-links li a {
 	position: relative;
 	font-size: 16px;
@@ -92,7 +79,6 @@ header#header {
 	padding: 10px;
 	font-family: "Roboto Flex", sans-serif;
 }
-
 .nav-links li:hover > a::before {
 	content: "";
 	position: absolute;
@@ -106,11 +92,9 @@ header#header {
 	opacity: 0;
 	transition: all 0.3s ease;
 }
-
 .nav-links li:hover > a::before {
 	opacity: 1;
 }
-
 .btn-contact-me-nav {
 	background-color: #5d8446;
 	border-radius: 8px;
@@ -120,9 +104,8 @@ header#header {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 	transition: all 0.2s ease-in-out;
 }
-
 .nav-links li .btn-contact-me-nav a {
-	font-family: 'Poppins', sans-serif;
+	font-family: Poppins, sans-serif;
 	font-size: 16px;
 	color: #fff;
 	text-decoration: none;
@@ -130,12 +113,10 @@ header#header {
 	display: block;
 	text-wrap: nowrap;
 }
-
 .btn-contact-me-nav:hover {
 	box-shadow: none;
 	background-color: #3e592d;
 }
-
 .nav-bar .langSw {
 	height: 40px;
 	width: 40px;
@@ -144,7 +125,6 @@ header#header {
 	justify-content: center;
 	margin: 0 5px;
 }
-
 .section-container {
 	display: flex;
 	flex-direction: row;
@@ -154,7 +134,6 @@ header#header {
 	margin: 0 auto;
 	box-sizing: border-box;
 }
-
 .form-container {
 	display: flex;
 	justify-content: center;
@@ -166,7 +145,6 @@ header#header {
 	box-sizing: border-box;
 	flex: 1.4;
 }
-
 .contact-container {
 	box-sizing: border-box;
 	display: flex;
@@ -178,48 +156,43 @@ header#header {
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 	flex: 1;
 }
-
 .contact-details-group {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	gap: 24px;
 }
-
 .contact-form input,
 .contact-form textarea {
-	background: #ffffff;
+	background: #fff;
 	color: #a3a2a8;
 	border: none;
 	padding: 10px;
 	margin: 10px 0;
 	border-radius: 30px;
 	font-size: 16px;
-	outline: none;
-	font-family: "Poppins", sans-serif;
+	outline: 0;
+	font-family: Poppins, sans-serif;
 	font-size: 20px;
 	font-weight: 500;
 	display: block;
 	width: 100%;
 }
-
 .contact-form input {
 	height: 40px;
 }
-
 .contact-form textarea {
 	height: 144px;
 	resize: none;
 	overflow: auto;
 }
-
 .submit-button {
 	background-color: #5d8446;
 	border-radius: 12px;
 	width: 250px;
 	height: 70px;
 	align-self: center;
-	font-family: "Unbounded", sans-serif;
+	font-family: Unbounded, sans-serif;
 	font-weight: 600;
 	font-size: 24px;
 	line-height: 0.9;
@@ -229,28 +202,23 @@ header#header {
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
 	transition: all 0.2s ease-in-out;
 }
-
-
 .submit-button:hover {
 	box-shadow: none;
 	background-color: #3e592d;
 }
-
 h1.form-header {
 	text-align: left;
-	font-family: "Prompt", sans-serif;
+	font-family: Prompt, sans-serif;
 	font-weight: 600;
 	font-size: 40px;
 	color: #000;
 	line-height: 1.1;
 }
-
 .contact-form {
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
 }
-
 p.status {
 	text-align: center;
 	font-family: "Roboto Flex", sans-serif;
@@ -263,19 +231,17 @@ p.status {
 	transition: all 0.2s ease-in-out;
 	margin: 0;
 }
-
 .contact-details {
 	display: flex;
 	flex-direction: column;
 	justify-content: right;
-	gap: 0px;
+	gap: 0;
 }
-
 h1.contact-header {
 	padding: 0;
 	margin: 0;
 	text-align: left;
-	font-family: "Prompt", sans-serif;
+	font-family: Prompt, sans-serif;
 	font-weight: 600;
 	font-size: 40px;
 	color: #5d8446;
@@ -283,7 +249,6 @@ h1.contact-header {
 	text-align: right;
 	margin-bottom: 42px;
 }
-
 .contact-details p,
 .contact-details p a {
 	text-align: right;
@@ -294,7 +259,6 @@ h1.contact-header {
 	line-height: 1.3;
 	color: #414141;
 }
-
 .contact-details h2 {
 	text-align: right;
 	font-family: "Roboto Flex", sans-serif;
@@ -304,14 +268,20 @@ h1.contact-header {
 	color: #819659;
 	margin-bottom: 3px;
 }
-
 .details,
 .email-details {
 	margin-bottom: 22px;
 }
-
 .phone {
 	margin-bottom: 18px;
+}
+.container07 > .wrapper > .inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 20px;
 }
 
 #footerT {
@@ -319,18 +289,17 @@ h1.contact-header {
 	text-align: left;
 	font-size: 1em;
 	font-family: "Roboto Flex", sans-serif;
-	color: white;
+	color: #fff;
 	line-height: 1.4;
 }
-
 #backtotop {
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
 	z-index: 99;
 	border: none;
-	outline: none;
-	background-color: #3E592D;
+	outline: 0;
+	background-color: #3e592d;
 	cursor: pointer;
 	padding: 15px 15px;
 	border-radius: 50%;
@@ -340,12 +309,10 @@ h1.contact-header {
 	opacity: 1;
 	right: 0;
 }
-
 @media (max-width: 736px) {
 	header .nav-bar .sidebarOpen {
 		display: block;
 	}
-
 	.menu {
 		position: fixed;
 		height: 100%;
@@ -357,17 +324,14 @@ h1.contact-header {
 		z-index: 100;
 		transition: all 0.4s ease;
 	}
-
 	header.active .menu {
-		left: -0%;
+		left: 0;
 		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
 	}
-
 	header.active .nav-bar .navLogo a {
 		opacity: 0;
 		transition: all 0.3s ease;
 	}
-
 	.menu .logo-toggle {
 		display: block;
 		width: 100%;
@@ -375,25 +339,21 @@ h1.contact-header {
 		align-items: center;
 		justify-content: space-between;
 	}
-
 	.logo-toggle .siderbarClose {
 		color: var(--text-color);
 		width: 25px;
 		height: 25px;
 		cursor: pointer;
 	}
-
 	.nav-bar .nav-links {
 		flex-direction: column;
 		padding-top: 30px;
 	}
-
 	.nav-links li > a {
 		display: block;
 		margin-top: 20px;
 		font-size: 18px;
 	}
-
 	.btn-contact-me-nav {
 		margin-left: 0;
 		margin-top: 40px;
@@ -401,71 +361,57 @@ h1.contact-header {
 	.btn-contact-me-nav a {
 		font-size: 20px;
 	}
-
 	.section-container {
 		flex-direction: column;
 		gap: 37;
 	}
-
 	.contact-details-group {
 		flex-direction: column;
 		gap: 0;
 	}
-
 	h1.form-header {
 		text-align: center;
 		font-size: x-large;
 	}
-
 	#submit-button {
 		font-size: large;
 		height: 50px;
 	}
-
 	.contact-form input,
 	.contact-form textarea,
 	p.status {
 		font-size: medium;
 	}
-
 	.contact-details-group {
 		gap: 10px;
 	}
-
 	.contact-form {
 		gap: 20px;
 	}
-
 	h1.contact-header {
 		text-align: left;
 		font-size: x-large;
 	}
-
 	.contact-details p,
 	.contact-details p a {
 		font-size: medium;
 		text-align: left;
 	}
-
 	.contact-details h2 {
 		font-size: large;
 		text-align: left;
 	}
-
 	.contact-container {
 		height: 100%;
 	}
-
 	div h2.style5 {
 		text-align: center;
 		padding-left: 0;
 		text-indent: 0;
 	}
-
 	div hr.style2 {
 		display: none;
 	}
-
 	img[alt="opt"] {
 		display: none;
 	}
