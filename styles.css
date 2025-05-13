@@ -283,6 +283,14 @@ h1.contact-header {
 	width: 100%;
 	gap: 20px;
 }
+#container10 > .wrapper > .inner {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	gap: 20px;
+}
 
 #footerT {
 	width: 312px;
